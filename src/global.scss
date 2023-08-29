@@ -1,0 +1,18 @@
+//Declare a variable
+$mainColor: #15023a;
+
+$width: 768px;
+$widthLaptopL: 1440px;
+
+//Declare a function
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+};
+
+@mixin laptopL {
+    @media (min-width: #{$widthLaptopL}) {
+        @content
+    }
+};
